@@ -1,0 +1,67 @@
+Description: Mark stack as non-executable
+Author: Russell Coker
+Forwarded: https://github.com/dbry/WavPack/pull/10
+
+diff --git a/src/pack_x64.s b/src/pack_x64.s
+index 9c7c7b0..c7c0c1c 100644
+--- a/src/pack_x64.s
++++ b/src/pack_x64.s
+@@ -6,6 +6,7 @@
+ ##      Distributed under the BSD Software License (see license.txt)      ##
+ ############################################################################
+ 
++        .section .note.GNU-stack,"",@progbits
+         .intel_syntax noprefix
+         .text
+ 
+diff --git a/src/pack_x86.s b/src/pack_x86.s
+index 4e5de18..1d53b81 100644
+--- a/src/pack_x86.s
++++ b/src/pack_x86.s
+@@ -6,6 +6,7 @@
+ ##      Distributed under the BSD Software License (see license.txt)      ##
+ ############################################################################
+ 
++        .section .note.GNU-stack,"",@progbits
+         .intel_syntax noprefix
+         .text
+ 
+diff --git a/src/unpack_armv7.s b/src/unpack_armv7.s
+index 149e6a9..a85b2d4 100644
+--- a/src/unpack_armv7.s
++++ b/src/unpack_armv7.s
+@@ -6,6 +6,7 @@
+ //      Distributed under the BSD Software License (see license.txt)      //
+ ////////////////////////////////////////////////////////////////////////////
+ 
++        .section .note.GNU-stack,"",@progbits
+         .text
+         .align
+         .global         unpack_decorr_stereo_pass_cont_armv7
+diff --git a/src/unpack_x64.s b/src/unpack_x64.s
+index a3b733c..309806e 100644
+--- a/src/unpack_x64.s
++++ b/src/unpack_x64.s
+@@ -6,6 +6,7 @@
+ ##      Distributed under the BSD Software License (see license.txt)      ##
+ ############################################################################
+ 
++        .section .note.GNU-stack,"",@progbits
+         .intel_syntax noprefix
+         .text
+ 
+diff --git a/src/unpack_x86.s b/src/unpack_x86.s
+index ddd0776..0c17af4 100644
+--- a/src/unpack_x86.s
++++ b/src/unpack_x86.s
+@@ -6,6 +6,7 @@
+ ##      Distributed under the BSD Software License (see license.txt)      ##
+ ############################################################################
+ 
++        .section .note.GNU-stack,"",@progbits
+         .intel_syntax noprefix
+         .text
+ 
+-- 
+2.7.0.rc3
+
