@@ -1,7 +1,8 @@
 Source: wavpack
 Section: sound
 Priority: optional
-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Uploaders: Sebastian Dröge <slomo@debian.org>,
            Loic Minier <lool@dooz.org>
 Build-Depends: cdbs (>= 0.4.93~),

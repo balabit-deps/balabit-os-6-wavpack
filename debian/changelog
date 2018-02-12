@@ -1,3 +1,11 @@
+wavpack (4.75.2-2ubuntu0.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service via crafted WV file
+    - debian/patches/CVE-2016-10169.patch: fix in words.c.
+    - CVE-2016-10169
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 12 Feb 2018 11:33:50 -0300
+
 wavpack (4.75.2-2) unstable; urgency=medium
 
   * Team upload.
