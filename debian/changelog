@@ -1,3 +1,13 @@
+wavpack (4.75.2-2ubuntu0.2) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-19840.patch: checking
+      if sample_rate is not zero in src/pack_utils.c and
+      removing register keyword in src/read_words.c.
+    - CVE-2018-19840
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 05 Dec 2018 16:51:11 -0300
+
 wavpack (4.75.2-2ubuntu0.1) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service via crafted WV file

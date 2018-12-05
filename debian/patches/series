@@ -1,2 +1,3 @@
 mark-stack-non-executable.patch
 CVE-2016-10169.patch
+CVE-2018-19840.patch
